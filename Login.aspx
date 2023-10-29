@@ -17,11 +17,12 @@
         <form id="form1" runat="server">
             <asp:TextBox ID="txt_user" runat="server" CssClass="User" Placeholder="Enter your ID"></asp:TextBox>
             <br />
-            <asp:TextBox ID="txt_password" runat="server" CssClass="Password" Placeholder="Enter your password"></asp:TextBox>
+            <asp:TextBox ID="txt_password" runat="server" CssClass="Password" Placeholder="Enter your password" TextMode="Password"></asp:TextBox>
             <br />
-            <button type="submit">LOGIN</button>
+            <asp:Button ID="btn_Login" runat="server" CssClass="btn" Text="Login" OnClick="btn_Login_Click" />
             <br />
             <a href="#">Forgot your password?</a>
+            <a href="Register.aspx">it's not registered?</a>
         </form>
     </article>
 </body>
